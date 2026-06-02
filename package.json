@@ -1,0 +1,40 @@
+{
+  "name": "@nodxteam/discord-utils",
+  "version": "1.0.0",
+  "description": "Utility library for Discord.js v14 bots",
+  "author": "nodxteam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodxteam/discord-utils.git"
+  },
+  "homepage": "https://github.com/nodxteam/discord-utils#readme",
+  "bugs": {
+    "url": "https://github.com/nodxteam/discord-utils/issues"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["discord", "discord.js", "bot", "utils", "embed", "paginator"],
+  "peerDependencies": {
+    "discord.js": "^14.0.0"
+  },
+  "devDependencies": {
+    "discord.js": "^14.14.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}
