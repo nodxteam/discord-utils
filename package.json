@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nodxteam/discord-utils.git"
+    "url": "git+https://github.com/nodxteam/discord-utils.git"
   },
   "homepage": "https://github.com/nodxteam/discord-utils#readme",
   "bugs": {
@@ -22,13 +22,22 @@
       "require": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["discord", "discord.js", "bot", "utils", "embed", "paginator"],
+  "keywords": [
+    "discord",
+    "discord.js",
+    "bot",
+    "utils",
+    "embed",
+    "paginator"
+  ],
   "peerDependencies": {
     "discord.js": "^14.0.0"
   },
